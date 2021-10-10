@@ -1,0 +1,7 @@
+.secrets.json
+.secrets-pinata.json
+.secrets-polygon.json
+.npm
+node_modules
+artifacts
+cache

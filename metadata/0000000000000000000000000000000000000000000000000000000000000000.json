@@ -1,0 +1,15 @@
+{
+  "name": "VOICE",
+  "description": "My self portrait is the first to start the 'rumor' for the 'word of mouth' collection. I chose to not show my eyes and only my mouth since I am the one who is spreading the “rumor” so to speak.",
+  "image": "ipfs://QmVtxjFGB1bb6CPJikb3k5G6jvctDVNrqssvmLJNk2GDwP",
+  "attributes": [
+      {
+      "trait_type": "Word", 
+      "value": "VOICE"
+    }, 
+    {
+      "trait_type": "Artist", 
+      "value": "Jillian VAlentin" 
+    }
+      ]
+}
