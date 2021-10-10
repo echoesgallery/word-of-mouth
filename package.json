@@ -1,0 +1,23 @@
+{
+  "name": "word-of-mouth",
+  "version": "1.0.0",
+  "description": "This repo contains the source code for the smart contract and the metadata for minting NFTs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/echoesgallery/word-of-mouth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/echoesgallery/word-of-mouth/issues"
+  },
+  "homepage": "https://github.com/echoesgallery/word-of-mouth#readme",
+  "devDependencies": {
+    "hardhat": "^0.0.7"
+  }
+}
