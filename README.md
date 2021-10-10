@@ -1,7 +1,23 @@
 # Word Of Mouth Art Therapy
 
 ## Purpose
-This repo contains the source code for the smart contract and the metadata for minting the first NFT. It is also set up for using as storage for future NFT json metadata files.
+
+This repo is dedicated to Word Of mouth Art Therapy Project started by Jillian Valentin. It contains 
+* the source code for the smart contract
+* the metadata for minting the first NFT
+* the project branding assets - logo, banner, contract metadata 
+
+The metadata folder in this repo is set up for using as storage for future NFT json metadata files. 
+
+The art images are not stored in this repo. Links to ipfs images are provided by artists to be included in the jason metadata files.
+
+The project is still under development and has not been posted in production.
+
+## TO DO before deployment in production
+1. Allow for adding new addresses who have permissions to mint. Currently only the contract creator can mint.
+1. Allow for storing NFT json metadata to other locations. Currently, nft json metadata files can be stored in the metadata folder in this repo only.
+1. Discuss royalties. Currently, there is a 1% seller fee set up in OpenSea to be paid to Jillian's address.
+1. Create original branding - project color palette, logo and banner
 
 ## How To Use the repo
 
@@ -33,10 +49,15 @@ Must have permissions to mint.
 3. Expand the mint function and enter the data needed for minting
 5. Submit transaction
 6. Approve the transaction in metamask
-7. Verify the newly minted item on opensea
+7. Verify the newly minted item on opensea contract collection
+- https://testnets.opensea.io/collection/word-of-mouth-v4
 
 ### Compile, Deploy and verify the contract
 Must have hardhat project set up following the instructions in [README-project-setup.md](https://github.com/BlockDevsUnited/NFT-COURSE/blob/main/README-project-setup.md). 
 1. Compile with ```npx hardahat compile```
 1. Deploy with ```npx hardhat run --network polygon scripts/deploy.js```
 1. Verify with ```npx hardhat verify --network polygon <contract_id>```
+
+## Credits and Aknowledgements
+- Logo image is from [Pixabay Royalty Free images](https://pixabay.com/photos/people-viewer-exhibition-2944064/)
+- Smart Contract developed by [Blockchain Developers United NFT-COURSE](https://github.com/BlockDevsUnited/NFT-COURSE)
