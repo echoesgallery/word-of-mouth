@@ -4,7 +4,7 @@
 
 The project is still under development and has not been posted in production.The latest project development gallery can be reviewed on [Opensea Testnet Word Of mouth V4](https://testnets.opensea.io/collection/word-of-mouth-v4).
 
-This repo is dedicated to Word Of mouth Art Therapy Project started by Jillian Valentin. It contains 
+This repo is dedicated to Word Of Mouth Art Therapy Project started by Jillian Valentin. It contains 
 * the source code for the smart contract
 * the metadata for minting the first NFT
 * the project branding assets - logo, banner, contract metadata 
