@@ -8,12 +8,10 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract WordOfMouth is ERC1155, Ownable {
-    uint256 public constant WISDOM = 0;
-    uint256 public constant INNOVATION = 1;
-    uint256 public constant VOICE = 2;
+    uint256 public constant VOICE = 0;
  
     constructor() ERC1155("https://raw.githubusercontent.com/echoesgallery/word-of-mouth/main/metadata/{id}.json"){
-        _mint(msg.sender,WISDOM,2,"");
+        _mint(msg.sender,VOICE,1,"");
     }
 
     function mint(address account, uint256 id, uint256 amount) public onlyOwner {
