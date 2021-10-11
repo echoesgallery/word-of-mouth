@@ -4,6 +4,7 @@
 
 require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-etherscan");
+require('@openzeppelin/hardhat-upgrades');
 
 // private keys for rinkeby testnet
 const { alchemyAPIKey, ethereumAccount, etherscanAPIKey} = require('./.secrets.json');
@@ -12,7 +13,7 @@ const { alchemyAPIKey, ethereumAccount, etherscanAPIKey} = require('./.secrets.j
 //const { alchemyAPIKey, ethereumAccount, etherscanAPIKey} = require('./.secrets-polygon.json');
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.2",
   networks: {
     hardhat: {
     },
