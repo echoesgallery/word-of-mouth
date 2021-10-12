@@ -10,8 +10,8 @@ async function main() {
    const myContract = await upgrades.deployProxy(WordOfMouthUpgradable,{initializer:"initialize"});
 
    await myContract.deployed();
-   console.log("MyContract deployed to:", myContract.address);
-
+   console.log("For upgrading the contract use this proxy contract address:", myContract.address);
+   console.log("For verifying the contract use the created contract address from your eterscan activity");
 }
 
 // We recommend this pattern to be able to use async/await everywhere
