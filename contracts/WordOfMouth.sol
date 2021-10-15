@@ -17,6 +17,10 @@ contract WordOfMouth is ERC1155, Ownable {
     uint public maxSupply = 3;
     uint public totalSupply;
 
+    //MoreMintAddr feature
+    //uint public maxMinter = 20;
+    mapping(address => bool) public minters;
+
     mapping(uint => bool) isInitialized;
 
     constructor() ERC1155(itemURI){
@@ -24,10 +28,20 @@ contract WordOfMouth is ERC1155, Ownable {
         isInitialized[VOICE]=true;
         _tokenIds.increment();
         totalSupply = _tokenIds.current();
+        minters[msg.sender] = true; //adding Owner during Verify?
     }
 
-    function mint(address toAccount) public onlyOwner returns (uint256) {
+    function addMinter(address newMinterAddr) public onlyOwner {
+        minters[newMinterAddr] = true;
+    }
+
+    function removeMinter(address newMinterAddr) public onlyOwner {
+        minters[newMinterAddr] = false;
+    }
+
+    function mint(address toAccount) public returns (uint256) {
         require(_tokenIds.current() < maxSupply,"Max Supply Reached");
+        require(minters[msg.sender] == true, "Not an authorized minter");
         uint256 id = _tokenIds.current();
         require(!isInitialized[id], "Token ID already minted");
         _mint(toAccount, id, id, "");
