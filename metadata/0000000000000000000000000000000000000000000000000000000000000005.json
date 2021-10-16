@@ -1,11 +1,11 @@
 {
-  "name": "#1 REFRESH",
+  "name": "#5 SELL",
   "description": "The metadata file for this item was added after the item was minted. We tested metadata refresh function in opensea",
   "image": "https://raw.githubusercontent.com/echoesgallery/word-of-mouth/main/metadata/wordofmouth-logo.png",
   "attributes": [
       {
       "trait_type": "Word", 
-      "value": "REFRESH"
+      "value": "SELL"
     }, 
     {
       "trait_type": "Artist", 

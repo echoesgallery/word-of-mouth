@@ -11,7 +11,7 @@ contract WordOfMouth is ERC1155, Ownable {
     uint256 public constant VOICE = 0;
     string public constant name = "Word of Mouth";
     string public constant symbol = "WOM";
-    string public itemURI = "https://raw.githubusercontent.com/BDU-NFT-Course/NFT-Metadata/main/sample-stones-erc1155/{id}.json";
+    string public itemURI = "https://raw.githubusercontent.com/echoesgallery/word-of-mouth/main/metadata/{id}.json";
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
     uint public maxSupply = 8;
