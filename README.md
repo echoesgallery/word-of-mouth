@@ -6,18 +6,12 @@ The project is still under development and has not been posted in production.The
 
 This repo is dedicated to Word Of Mouth Art Therapy Project started by Jillian Valentin. It contains 
 * the source code for the smart contract
-* the metadata for minting the first NFT
+* the metadata for minting the first NFT and some testing
 * the project branding assets - logo, banner, contract metadata 
 
 The metadata folder in this repo is set up for using as storage for future NFT json metadata files. 
 
 The art images are not stored in this repo. Links to ipfs images are provided by artists to be included in the jason metadata files.
-
-## TO DO before deployment in production
-1. Allow for adding new addresses who have permissions to mint. Currently only the contract creator can mint.
-1. Allow for storing NFT json metadata to other locations. Currently, nft json metadata files can be stored in the metadata folder in this repo only.
-1. Discuss royalties. Currently, there is a 1% seller fee set up in OpenSea to be paid to Jillian's address.
-1. Create original branding - project color palette, logo and banner
 
 ## How To Use the repo
 
@@ -43,14 +37,14 @@ cp 0000000000000000000000000000000000000000000000000000000000000000.json 0000000
 Must have permissions to mint.
 
 1. Open the contract URL on etherscan.io
-- https://rinkeby.etherscan.io/address/0x83A9934A412fc1F60DDa03830b34C8E3d5D339e3
+- https://rinkeby.etherscan.io/address/0x90dDaEE3dd0A09593031102A02276b41af05c468
 2. Click on write contract 
 4. Connect your metamask with account that have permissions to mint
 3. Expand the mint function and enter the data needed for minting
 5. Submit transaction
 6. Approve the transaction in metamask
 7. Verify the newly minted item on opensea contract collection
-- https://testnets.opensea.io/collection/word-of-mouth-v4
+- https://testnets.opensea.io/collection/word-of-mouth-v10
 
 ### Compile, Deploy and verify the contract
 Must have hardhat project set up following the instructions in [README-project-setup.md](https://github.com/BlockDevsUnited/NFT-COURSE/blob/main/README-project-setup.md). 
