@@ -14,7 +14,7 @@ contract WordOfMouth is ERC1155, Ownable {
     string public itemURI = "https://raw.githubusercontent.com/BDU-NFT-Course/NFT-Metadata/main/sample-stones-erc1155/{id}.json";
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
-    uint public maxSupply = 3;
+    uint public maxSupply = 8;
     uint public totalSupply;
 
     //MoreMintAddr feature
