@@ -2,9 +2,7 @@
 
 ## Purpose
 
-The project is still under development and has not been posted in production.The latest project development gallery can be reviewed on [Opensea Testnet Word Of mouth V10](https://testnets.opensea.io/collection/word-of-mouth-v10).
-
-This repo is dedicated to Word Of Mouth Art Therapy Project started by Jillian Valentin. It contains 
+This repo is dedicated to the [Word Of Mouth](https://opensea.io/collection/word-of-mouth-v4) NFT Collection started by Jillian Valentin. It contains 
 * the source code for the smart contract
 * the metadata for minting the first NFT and some testing
 * the project branding assets - logo, banner, contract metadata 
@@ -15,10 +13,10 @@ The art images are not stored in this repo. Links to ipfs images are provided by
 
 ## How To Use the repo
 
-### Port your Art Image on ipfs
+### Post your Art Image on ipfs
 
 1. Upload the art image to ipfs network. Note the ipfs://xxx address for the image.
-1. E-mail the ipfs://xxx address of the image to echoesgallery.info@gmail.com
+1. Provide the ipfs://xxx address of the image to collection founders.
 
 ### Create a metadata file
 
@@ -37,14 +35,16 @@ cp 0000000000000000000000000000000000000000000000000000000000000000.json 0000000
 Must have permissions to mint.
 
 1. Open the contract URL on etherscan.io
-- https://rinkeby.etherscan.io/address/0x90dDaEE3dd0A09593031102A02276b41af05c468
-2. Click on write contract 
+- https://polygonscan.com/address/0xF26f76b3C0833aDBF078B455258648FD0C84f2A0
+- https://rinkeby.etherscan.io/address/0x1Fe857b4d3CDe13eD2c5Ed07cc11bff9Ce0663B3
+2. Click on Contract, then click on Write contract 
 4. Connect your metamask with account that have permissions to mint
 3. Expand the mint function and enter the data needed for minting
 5. Submit transaction
 6. Approve the transaction in metamask
 7. Verify the newly minted item on opensea contract collection
-- https://testnets.opensea.io/collection/word-of-mouth-v10
+- https://opensea.io/collection/word-of-mouth-v4
+- https://testnets.opensea.io/collection/word-of-mouth-v11
 
 ### Compile, Deploy and verify the contract
 Must have hardhat project set up following the instructions in [README-project-setup.md](https://github.com/BlockDevsUnited/NFT-COURSE/blob/main/README-project-setup.md). 
@@ -52,6 +52,6 @@ Must have hardhat project set up following the instructions in [README-project-s
 1. Deploy with ```npx hardhat run --network polygon scripts/deploy.js```
 1. Verify with ```npx hardhat verify --network polygon <contract_id>```
 
-## Credits and Aknowledgements
-- Logo image is from [Pixabay Royalty Free images](https://pixabay.com/photos/people-viewer-exhibition-2944064/)
-- Smart Contract developed by [Blockchain Developers United NFT-COURSE](https://github.com/BlockDevsUnited/NFT-COURSE)
+## Aknowledgements
+- Smart Contract sponsored by [Blockchain Developers United NFT-COURSE](https://github.com/BlockDevsUnited/NFT-COURSE)
+- Test image is from [Pixabay Royalty Free images](https://pixabay.com/photos/people-viewer-exhibition-2944064/)
