@@ -8,13 +8,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract WordOfMouth is ERC1155, Ownable {
-    uint256 public constant VOICE = 0;
     string public constant name = "Word of Mouth";
     string public constant symbol = "WOM";
     string public itemURI = "https://raw.githubusercontent.com/echoesgallery/word-of-mouth/main/metadata/{id}.json";
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
-    uint public maxSupply = 8;
+    uint public maxSupply = 21;
     uint public totalSupply;
 
     //MoreMintAddr feature
@@ -24,8 +23,8 @@ contract WordOfMouth is ERC1155, Ownable {
     mapping(uint => bool) isInitialized;
 
     constructor() ERC1155(itemURI){
-        _mint(msg.sender,VOICE,1,"");
-        isInitialized[VOICE]=true;
+        _mint(msg.sender,0,1,"");
+        isInitialized[0]=true;
         _tokenIds.increment();
         totalSupply = _tokenIds.current();
         minters[msg.sender] = true; //adding Owner during Verify?
